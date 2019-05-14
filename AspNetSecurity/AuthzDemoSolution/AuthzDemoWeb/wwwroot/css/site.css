@@ -1,0 +1,76 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+
+/* raf */
+
+.claimtype {
+    color: darkred;
+}
+
+
+/* For small screen */
+.row1 :nth-child(even) {
+    background-color: #efefef;
+}
+
+.row1 :nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+/* For medium screen */
+@media (min-width: 768px) {
+    .row1 :nth-child(4n), .row1 :nth-child(4n-1) {
+        background: #efefef;
+    }
+
+    .row1 :nth-child(4n-2), .row1 :nth-child(4n-3) {
+        background: #e0e0e0;
+    }
+}
+
+/* For large screen */
+@media (min-width: 992px) {
+    .row1 :nth-child(6n), .row1 :nth-child(6n-1), .row1 :nth-child(6n-2) {
+        background: #efefef;
+    }
+
+    .row1 :nth-child(6n-3), .row1 :nth-child(6n-4), .row1 :nth-child(6n-5) {
+        background: #e0e0e0;
+    }
+}
